@@ -1,0 +1,11 @@
+@import '../base/variables';
+
+/*
+ * Override and extend Bootstrap container defaults 
+*/
+
+@media (min-width: $screen-size-xxl) {
+  .container {
+    max-width: 1690px;
+  }
+}
