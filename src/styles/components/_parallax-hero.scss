@@ -1,0 +1,43 @@
+@import '../base/variables';
+
+.parallax-group_hero {
+  height: calc(100vw / 4.35);
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &_back {
+    transform: translateZ(-1px) translateY(calc(100vh / -3.8)) scale(2.5);
+  }
+
+  &_base {
+    transform: translateZ(0);
+    height: 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.parallax-img {
+  width: 100vw;
+}
+
+/*
+ * Seperate hero styles from Parallax styles
+*/
+.hero {
+  color: $primary-bright;
+
+  &-title {
+    text-transform: uppercase;
+  }
+
+  &-desc {
+  }
+}

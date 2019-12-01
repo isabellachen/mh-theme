@@ -6,7 +6,7 @@ export function Header() {
   return (
     <div className="header">
       <div className="container header-wrapper">
-        <img className="header-logo" src={logo} alt="logo" />
+        <img className="header-logo" src={logo} alt="madhouse-heaven-logo" />
         <div className="header-hamburger">
           <Hamburger />
         </div>

@@ -1,0 +1,43 @@
+@import '../base/variables';
+
+.parallax-group_main {
+  color: $primary-dark;
+  background-color: $primary-bright;
+  height: 100vh;
+}
+
+/*
+ * Seperate styles for parallax effect from main content styles
+*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-featured {
+    width: 100%;
+    display: flex;
+  }
+
+  &-featured_card {
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 0 1rem;
+  }
+
+  &-featured_image {
+    width: 100%;
+  }
+
+  &-featured_info {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+    height: 430px;
+  }
+}
