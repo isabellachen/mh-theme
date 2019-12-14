@@ -7,8 +7,11 @@ export function Header() {
     <div className="header">
       <div className="container header-wrapper">
         <img className="header-logo" src={logo} alt="madhouse-heaven-logo" />
-        <div className="header-hamburger">
-          <Hamburger />
+        <div>
+          <h1>Destinations</h1>
+          <div className="header-hamburger">
+            <Hamburger />
+          </div>
         </div>
       </div>
     </div>

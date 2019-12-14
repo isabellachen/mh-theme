@@ -2,31 +2,38 @@
 
 .parallax-group_main {
   color: $primary-dark;
-  background-color: $primary-bright;
   height: 100vh;
+  background: url('../../assets/design/background-tile.png');
+  background-repeat: repeat;
 }
 
 /*
  * Seperate styles for parallax effect from main content styles
 */
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &-featured {
-    width: 100%;
+  &-inner {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  &-featured_card {
+  &-row {
+    width: 100%;
+    display: flex;
+    // justify-content: center;
+  }
+
+  &-featured_card,
+  &-standard_card {
     position: relative;
     flex-grow: 1;
     flex-basis: 400px;
+    max-width: 400px;
     margin: 0 1rem;
   }
 
-  &-featured_image {
+  &-featured_image,
+  &-standard_image {
     width: 100%;
   }
 
@@ -39,5 +46,21 @@
     top: 0;
     text-align: center;
     height: 430px;
+  }
+
+  &-standard_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    text-align: center;
+    padding: 0.35rem;
+    background-color: $primary-brightest;
+
+    h3 {
+      font-size: 1.15rem;
+      font-weight: normal;
+    }
   }
 }
