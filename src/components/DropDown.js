@@ -60,7 +60,9 @@ export function DropDown({ navItems, onHoverNav }) {
   };
 
   return (
-    <ul className={`dropdown ${onHoverNav ? 'is-shown' : ''}`}>
+    <ul
+      className={`dropdown dropdown-main_menu ${onHoverNav ? 'is-shown' : ''}`}
+    >
       {renderMenu(navItems)}
     </ul>
   );
