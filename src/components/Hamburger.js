@@ -6,13 +6,13 @@ export function Hamburger() {
   return (
     <div
       id="hamburger"
-      class={`hamburger hamburger--slider js-hamburger ${
+      className={`hamburger hamburger--slider js-hamburger ${
         isActive ? 'is-active' : ''
       }`}
       onClick={() => updateIsActive(!isActive)}
     >
-      <span class="hamburger-box">
-        <span class="hamburger-inner" />
+      <span className="hamburger-box">
+        <span className="hamburger-inner" />
       </span>
     </div>
   );

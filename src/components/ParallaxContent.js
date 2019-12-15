@@ -8,8 +8,8 @@ export function ParallaxContent() {
   const renderFeaturedCards = featuredContent => {
     return (
       <Fragment>
-        {featuredContent.map(content => {
-          return <FeaturedStoryCard content={content} />;
+        {featuredContent.map((content, i) => {
+          return <FeaturedStoryCard key={i} content={content} />;
         })}
       </Fragment>
     );
@@ -18,8 +18,8 @@ export function ParallaxContent() {
   const renderStoryCards = cardContent => {
     return (
       <Fragment>
-        {regularContent.map(content => {
-          return <StoryCard content={content} />;
+        {regularContent.map((content, i) => {
+          return <StoryCard key={i} content={content} />;
         })}
       </Fragment>
     );
