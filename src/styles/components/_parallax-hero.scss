@@ -33,11 +33,14 @@
 */
 .hero {
   color: $basic-brightest;
+  padding: 0 5rem;
 
   &-title {
     text-transform: uppercase;
   }
 
   &-desc {
+    font-size: 1.25rem;
+    font-weight: normal;
   }
 }

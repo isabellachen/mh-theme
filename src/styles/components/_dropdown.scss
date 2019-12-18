@@ -1,6 +1,6 @@
 @import '../base/variables';
 
-$menu_item-width: 11rem;
+$menu_item-width: 8rem;
 
 .dropdown {
   visibility: none;
@@ -22,10 +22,11 @@ $menu_item-width: 11rem;
     z-index: 1;
     top: 0;
     opacity: 0;
-    left: $menu_item-width;
+    left: $menu_item-width * 2;
     transition: opacity 200ms ease-in-out;
     &.is-shown {
       opacity: 1;
+      left: $menu_item-width;
     }
   }
 
@@ -37,6 +38,10 @@ $menu_item-width: 11rem;
     padding-left: 1rem;
     text-transform: uppercase;
     font-weight: normal;
+    color: $basic-bright;
+    &:hover {
+      color: $basic-brightest;
+    }
 
     &.is-parent {
       &:after {
@@ -48,8 +53,4 @@ $menu_item-width: 11rem;
       }
     }
   }
-
-  // &.is-shown {
-  //   opacity: 1;
-  // }
 }

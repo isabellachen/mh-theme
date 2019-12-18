@@ -21,8 +21,14 @@ function SubDropDown({ item }) {
   return (
     <Fragment>
       <li
-        onMouseEnter={() => updateOnHoverListItem(true)}
-        onMouseLeave={() => updateOnHoverListItem(false)}
+        onMouseEnter={() => {
+          updateOnHoverListItem(true);
+          console.log(`on enter ${item.name}`);
+        }}
+        onMouseLeave={() => {
+          updateOnHoverListItem(false);
+          console.log(`on leave ${item.name}`);
+        }}
         className={`dropdown-item ${item.menu ? 'is-parent' : ''}`}
       >
         {item.name}

@@ -11,15 +11,19 @@ export function MainMenu() {
     },
     {
       name: 'asia',
-      menu: [{ name: 'cambodia' }, { name: 'thailand' }]
+      menu: [{ name: 'cambodia' }, { name: 'thailand' }, { name: 'singapore' }]
+    },
+    {
+      name: 'africa',
+      menu: [{ name: 'kenya' }, { name: 'namibia' }]
     }
   ];
 
   return (
     <nav
+      className={`main_menu`}
       onMouseEnter={() => updateOnHoverNav(true)}
       onMouseLeave={() => updateOnHoverNav(false)}
-      className={`main_menu`}
     >
       <div className="main_menu-title">
         <h1>Destinations</h1>
