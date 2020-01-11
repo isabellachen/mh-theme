@@ -12,7 +12,11 @@ function SubDropDown({ item }) {
     return (
       <Fragment>
         {items.map((item, i) => {
-          return <li className="dropdown-item">{item.name}</li>;
+          return (
+            <li key={i} className="dropdown-item">
+              {item.name}
+            </li>
+          );
         })}
       </Fragment>
     );
@@ -50,7 +54,7 @@ export function DropDown({ navItems, onHoverNav }) {
       <Fragment>
         {items.map((item, i) => {
           return (
-            <Fragment>
+            <div key={i}>
               {item.menu ? (
                 <Fragment>
                   {item.menu ? <SubDropDown item={item} /> : null}
@@ -58,7 +62,7 @@ export function DropDown({ navItems, onHoverNav }) {
               ) : (
                 <li>{item.name}</li>
               )}
-            </Fragment>
+            </div>
           );
         })}
       </Fragment>

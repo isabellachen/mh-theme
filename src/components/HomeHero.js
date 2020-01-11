@@ -1,11 +1,11 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import montenegro from 'assets/carousel/montenegro.png';
 import iceland from 'assets/carousel/iceland.png';
 import jordan from 'assets/carousel/jordan.png';
 import kenya from 'assets/carousel/kenya.png';
 import capeVerde from 'assets/carousel/cape-verde.png';
 
-export function ParallaxHero() {
+export function HomeHero() {
   const heroItems = [
     {
       name: 'Montenegro',

@@ -4,7 +4,7 @@ import { StoryCard } from './StoryCard';
 import { featuredContent } from '../mocks/card-content';
 import { regularContent } from '../mocks/card-content';
 
-export function ParallaxContent() {
+export function HomeContent() {
   const renderFeaturedCards = featuredContent => {
     return (
       <Fragment>

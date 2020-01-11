@@ -1,19 +1,32 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Header } from './Header';
-import { ParallaxHero } from './ParallaxHero';
-import { ParallaxContent } from './ParallaxContent';
+import { HomeHero } from './HomeHero';
+import { HomeContent } from './HomeContent';
+import { SingleComponent } from './SingleComponent';
 import 'styles/app.scss';
 
 //You'll need to put both the hero and content into a router outlet
 //to switch between home/archives and single pages.
 
+function HomeComponent() {
+  return (
+    <div>
+      <HomeHero />
+      <HomeContent />
+    </div>
+  );
+}
+
 function App() {
   return (
-    <div className="main parallax">
-      <Header />
-      <ParallaxHero />
-      <ParallaxContent />
-    </div>
+    <Router>
+      <div className="parallax">
+        <Header />
+        <Route exact={true} path="/" component={HomeComponent} />
+        <Route exact={true} path="/:page" render={SingleComponent} />
+      </div>
+    </Router>
   );
 }
 
