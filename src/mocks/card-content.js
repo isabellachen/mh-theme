@@ -30,6 +30,8 @@ export const featuredContent = [
 export const regularContent = [
   {
     title: 'Lake Naivasha and Its Denizens',
+    continent: 'africa',
+    country: 'kenya',
     slug: 'lake-naivasha-and-denizens',
     excerpt:
       "Observe majestic African fish eagles, dive bombing kingfishers and bloats of wallowing hippos in the calm, shallow waters of one of Kenya's most accessible lakes..",
@@ -37,6 +39,8 @@ export const regularContent = [
   },
   {
     title: 'Sunset Rooftop Tour of the Seville Cathedral',
+    continent: 'europe',
+    country: 'seville',
     slug: 'sunset-roodtop-tour-seville',
     excerpt:
       "The Seville Cathedral Rooftop Tour gives you the history of the Cathedral's architecture, some fascinating engineering details and beautiful sunset views of Seville...",
@@ -44,6 +48,8 @@ export const regularContent = [
   },
   {
     title: "Exploring Singapore's Chinatown",
+    continent: 'asia',
+    country: 'singapore',
     slug: 'exploring-singapores-chinatown',
     excerpt:
       "Singapore's Chinatown is a melting pot of cultures, and a unique mix of tradition and modernity...",

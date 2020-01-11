@@ -1,0 +1,33 @@
+@import '../base/variables';
+
+.parallax-group_main {
+  color: $basic-dark;
+  height: 100vh;
+  background: url('../../assets/design/background-tile.png');
+  background-repeat: repeat;
+}
+
+.parallax-group_hero {
+  height: calc(100vw / 4.35);
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  &_back {
+    transform: translateZ(-1px) translateY(calc(100vh / -2.8)) scale(2.5);
+  }
+
+  &_base {
+    transform: translateZ(0);
+    height: 105%;
+  }
+}
+
+.parallax-img {
+  width: 100vw;
+}

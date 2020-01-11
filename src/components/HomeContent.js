@@ -28,13 +28,15 @@ export function HomeContent() {
   return (
     <div className="parallax-group parallax-group_main">
       <div className="content">
-        <div className="content-inner container">
+        <div className="content_home container">
           <h1>FEATURED</h1>
-          <div className="content-row">
+          <div className="content_home-row">
             {renderFeaturedCards(featuredContent)}
           </div>
           <h1>STORIES</h1>
-          <div className="content-row">{renderStoryCards(regularContent)}</div>
+          <div className="content_home-row">
+            {renderStoryCards(regularContent)}
+          </div>
         </div>
       </div>
     </div>

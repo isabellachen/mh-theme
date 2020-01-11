@@ -1,0 +1,64 @@
+@import '../base/variables';
+$icon-margin: 0.25rem;
+
+.post {
+  &-container {
+    width: 66.666%;
+    h2 {
+      margin-top: 0.5rem;
+      font-size: 1.75rem;
+    }
+  }
+
+  &-header {
+    letter-spacing: 0.05rem;
+    color: $basic-medium-light;
+    margin: 1.5rem 0 1rem;
+    text-transform: capitalize;
+  }
+
+  &-date {
+    &:before {
+      content: url(../../assets/icons/clock.svg);
+      position: relative;
+      top: 3px;
+      margin-right: $icon-margin;
+    }
+  }
+
+  &-views {
+    &:before {
+      content: url(../../assets/icons/eye.svg);
+      position: relative;
+      top: 3px;
+      margin-right: $icon-margin;
+    }
+  }
+
+  &-location {
+    &:before {
+      content: url(../../assets/icons/location.svg);
+      position: relative;
+      top: 3px;
+      margin-right: $icon-margin;
+    }
+  }
+
+  &-image {
+    width: 100%;
+  }
+
+  &-triplet {
+    display: flex;
+    width: 100%;
+  }
+
+  &-triplet_single {
+    flex: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    &:nth-child(-n + 2) {
+      margin-right: 0.5rem;
+    }
+  }
+}

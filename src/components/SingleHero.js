@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { featuredContent } from '../mocks/card-content';
+import React from 'react';
 import { regularContent } from '../mocks/card-content';
 
 export function SingleHero({ location }) {
@@ -17,7 +16,7 @@ export function SingleHero({ location }) {
       </div>
       <div className="parallax-layer parallax-layer_base">
         <div className="hero hero-content container">
-          <div style={{ visibility: 'hidden' }}>hello</div>
+          {!path && <div style={{ visibility: 'hidden' }}>hello</div>}
           <div className="hero-info">
             <h1 className="hero-title">{content && content.title}</h1>
             <h2 className="hero-desc">{content && content.excerpt}</h2>
