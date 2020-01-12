@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { postImages } from '../mocks/post-content';
 
 function PostTip() {
@@ -21,21 +21,21 @@ function ImageTriplet({ country }) {
       <div className="post-triplet_single">
         <img
           className="post-image"
-          src={postImages[country][2]}
+          src={postImages && postImages[country] && postImages[country][2]}
           alt={country}
         />
       </div>
       <div className="post-triplet_single">
         <img
           className="post-image"
-          src={postImages[country][3]}
+          src={postImages && postImages[country] && postImages[country][3]}
           alt={country}
         />
       </div>
       <div className="post-triplet_single">
         <img
           className="post-image"
-          src={postImages[country][4]}
+          src={postImages && postImages[country] && postImages[country][4]}
           alt={country}
         />
       </div>
@@ -65,7 +65,7 @@ export function Post({ country, continent }) {
         </p>
         <img
           className="post-image"
-          src={postImages[country][0]}
+          src={postImages && postImages[country] && postImages[country][0]}
           alt={country}
         />
         <h2>Finibus Bonorum et Malorum</h2>
@@ -84,7 +84,7 @@ export function Post({ country, continent }) {
         </p>
         <img
           className="post-image"
-          src={postImages[country][1]}
+          src={postImages && postImages[country] && postImages[country][1]}
           alt={country}
         />
         <ImageTriplet country={country} />
@@ -105,7 +105,7 @@ export function Post({ country, continent }) {
         </p>
         <img
           className="post-image"
-          src={postImages[country][1]}
+          src={postImages && postImages[country] && postImages[country][1]}
           alt={country}
         />
         <p>
