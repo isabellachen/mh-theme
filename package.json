@@ -2,6 +2,7 @@
   "name": "mh-theme",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://isabellachen.github.io/mh-theme",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "node-sass": "^4.13.0",
@@ -30,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
