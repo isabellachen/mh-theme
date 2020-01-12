@@ -61,7 +61,11 @@ export function HomeHero() {
                     onClick={() => updateChosenItem(heroItems[i])}
                     key={item.name}
                   >
-                    {item.name}
+                    <span
+                      className={`hero-button ${
+                        chosenItem.name === item.name ? 'is-chosen' : ''
+                      }`}
+                    ></span>
                   </span>
                 );
               })}

@@ -4,6 +4,10 @@ $icon-margin: 0.25rem;
 .post {
   &-container {
     width: 66.666%;
+    background-color: white;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    background-color: $basic-brightest;
     h2 {
       margin-top: 0.5rem;
       font-size: 1.75rem;
@@ -60,5 +64,9 @@ $icon-margin: 0.25rem;
     &:nth-child(-n + 2) {
       margin-right: 0.5rem;
     }
+  }
+
+  &-tip {
+    background-color: $background-medium-light;
   }
 }

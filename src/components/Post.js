@@ -115,6 +115,8 @@ export function Post({ country, continent }) {
           sunt explicabo.
         </p>
       </div>
+      <div>author box</div>
+      <div>comments</div>
     </div>
   );
 }

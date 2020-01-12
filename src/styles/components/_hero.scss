@@ -21,7 +21,6 @@
   }
 
   &-select_wrapper {
-    background: rgba(0, 0, 0, 0.3);
     padding: 0.5rem 1rem;
     display: flex;
     width: 100%;
@@ -32,10 +31,6 @@
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    &:after {
-      content: '|';
-      margin: 0 1rem;
-    }
   }
 
   &-title {
@@ -46,5 +41,18 @@
   &-desc {
     font-size: 1.25rem;
     font-weight: normal;
+  }
+
+  &-button {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    border: 2px solid $basic-brightest;
+    margin: 0 2rem;
+    display: block;
+
+    &.is-chosen {
+      background-color: $basic-brightest;
+    }
   }
 }
