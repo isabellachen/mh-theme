@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mh-theme/static/css/main.f1201d48.chunk.css",
-    "main.js": "/mh-theme/static/js/main.332cf35c.chunk.js",
-    "main.js.map": "/mh-theme/static/js/main.332cf35c.chunk.js.map",
+    "main.js": "/mh-theme/static/js/main.3ef6720e.chunk.js",
+    "main.js.map": "/mh-theme/static/js/main.3ef6720e.chunk.js.map",
     "runtime-main.js": "/mh-theme/static/js/runtime-main.65b2cb10.js",
     "runtime-main.js.map": "/mh-theme/static/js/runtime-main.65b2cb10.js.map",
     "static/js/2.4dfaac10.chunk.js": "/mh-theme/static/js/2.4dfaac10.chunk.js",
     "static/js/2.4dfaac10.chunk.js.map": "/mh-theme/static/js/2.4dfaac10.chunk.js.map",
     "index.html": "/mh-theme/index.html",
-    "precache-manifest.84740487298ff9b12b59ff6f588ab952.js": "/mh-theme/precache-manifest.84740487298ff9b12b59ff6f588ab952.js",
+    "precache-manifest.27ed02907a41d103a168dcba727773be.js": "/mh-theme/precache-manifest.27ed02907a41d103a168dcba727773be.js",
     "service-worker.js": "/mh-theme/service-worker.js",
     "static/css/main.f1201d48.chunk.css.map": "/mh-theme/static/css/main.f1201d48.chunk.css.map",
     "static/media/cape-verde.png": "/mh-theme/static/media/cape-verde.dcc48e22.png",
@@ -44,6 +44,6 @@
     "static/js/runtime-main.65b2cb10.js",
     "static/js/2.4dfaac10.chunk.js",
     "static/css/main.f1201d48.chunk.css",
-    "static/js/main.332cf35c.chunk.js"
+    "static/js/main.3ef6720e.chunk.js"
   ]
 }
