@@ -20,7 +20,7 @@ function HomeComponent() {
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="parallax">
         <Header />
         <Route exact={true} path="/" component={HomeComponent} />
