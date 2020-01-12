@@ -11,10 +11,10 @@ export function SingleContent({ location }) {
     <div className="parallax-group parallax-group_main">
       <div className="content">
         <div className="d-flex container">
-          {/* <Post
+          <Post
             country={content && content.country}
             continent={content && content.continent}
-          /> */}
+          />
           <Sidebar />
         </div>
       </div>
